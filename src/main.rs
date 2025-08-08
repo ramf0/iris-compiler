@@ -1,3 +1,9 @@
+use crate::compiler::Compiler;
+
+mod compiler;
+
 fn main() {
-    println!("Hello, world!");
+    let mut compiler = Compiler {};
+    
+    compiler.compile("println('Hello')println('World')println('Hello')");
 }
